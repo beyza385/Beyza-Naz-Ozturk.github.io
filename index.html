@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>CSS Temel Ödevi</title>
-<link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <title>CSS Temel Ödevi</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>CSS Temel Ödevi</h1>
+  <div class="container">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+      <h1>CSS Temel Ödevi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkında</a></li>
+          <li><a href="interests.html">Hizmetler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
-
-  <p class="intro">
-    Verilen benzer bir düzenle basit bir web sayfası oluşturdum. CSS'in temel özellikleri
-    kullanılarak sayfa bölümleri düzenlenmiştir.
-  </p>
-
-  <div class="content">
-    <h2>İçerik</h2>
-
-    <p>
-      Bu alanda örnek içerik metinleri bulunmaktadır. CSS özellikleriyle bu metinler
-      arasında boşluklar, hizalamalar ve düzenlemeler yapılabilir.
+    <p class="intro">
+      Verilen benzer bir düzenle basit bir web sayfası oluşturdum. CSS'in temel özelliklerini
+      (display, width, height, margin, padding, border, selector) uygulayarak düzen oluşturdum.
+      Sadece HTML5 + CSS3 kullandım.
     </p>
 
-    <p>
-      Önce CSS ile kutuları ve alanları yan yana getirmeyi, ardından metin ve bağlantılar
-      üzerinde düzenlemeler yapmayı amaçladım.
-    </p>
+    <main>
+      <div class="content">
+        <h2>İçerik</h2>
+        <p>
+          Bu alanda örnek içerik metinleri bulunmaktadır. CSS özellikleriyle bu metinler
+          arasında <strong>boşluklar</strong> ve hizalamalar düzenlenebilir.
+        </p>
+        <p>
+          Önce CSS ile kutuları ve alanları yan yana getirmeyi, ardından alt alta yerleştirmeyi
+          öğrendik. Şimdi ise CSS seçicilerini kullanarak grup ve hiyerarşik seçimler yapmayı görüyoruz.
+        </p>
+      </div>
+
+      <aside class="sidebar">
+        <h2>Yan Menü / Bilgi</h2>
+        <p>
+          Bu alan yan menü veya bilgi kısmıdır. CSS ile genişlik (width), yükseklik (height),
+          kenar boşlukları (margin/padding) ve kenarlık (border) özellikleri kullanılarak düzenlenebilir.
+        </p>
+        <p>
+          Öğrendiklerimizi hiyerarşik ve grup seçicilerle uygulayıp farklı bölümlere stil verebiliriz.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.</p>
+    </footer>
+
   </div>
-
-  <aside class="sidebar">
-    <h2>Yan Menü / Bilgi</h2>
-
-    <p>
-      Bu alan yan bilgi kutusudur. CSS ile genişlik, yükseklik, kenarlık ve boşluk
-      ayarları uygulanabilir.
-    </p>
-
-    <p>
-      Hiyerarşik ve grup seçiciler kullanılarak farklı bölümlere farklı stiller verilebilir.
-    </p>
-  </aside>
-
-</main>
-
-<footer>
-  <p>© 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.</p>
-</footer>
 
 </body>
 </html>
