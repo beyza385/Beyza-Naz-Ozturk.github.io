@@ -1,74 +1,59 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>İlgi Alanlarım | Beyza Naz Öztürk</title>
-<link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <title>Hizmetler | CSS Temel Ödevi</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>CSS Temel Ödevi</h1>
+  <div class="container">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+      <h1>CSS Temel Ödevi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkında</a></li>
+          <li><a href="interests.html" class="active">Hizmetler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
+    <p class="intro">
+      Bu sayfa, farklı içerik bölümlerinin aynı düzen içinde nasıl gösterilebileceğine örnek olarak hazırlanmıştır.
+    </p>
 
-<div class="content">
+    <main>
+      <div class="content">
+        <h2>Hizmetler</h2>
+        <p>
+          Bu bölümde örnek bir hizmetler içeriği yer almaktadır. HTML yapısı korunarak
+          farklı metinler eklenebilir.
+        </p>
+        <p>
+          Sayfa düzeni değişmeden içerik değiştirildiğinde, tüm site daha düzenli ve tutarlı görünür.
+        </p>
+      </div>
 
-<h2>İlgi Alanlarım</h2>
+      <aside class="sidebar">
+        <h2>Ek Bilgi</h2>
+        <p>
+          CSS sayesinde aynı tasarım yapısı farklı sayfalarda tekrar kullanılabilir.
+          Böylece site genelinde birlik sağlanır.
+        </p>
+        <p>
+          Menü, kutular, başlıklar ve footer gibi yapılar tüm sayfalarda aynı şekilde kullanılabilir.
+        </p>
+      </aside>
+    </main>
 
-<p>
-Teknoloji alanında özellikle yapay zeka, makine öğrenmesi ve gömülü sistemler konularına ilgi duyuyorum.
-</p>
+    <footer>
+      <p>© 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.</p>
+    </footer>
 
-<p>
-Ayrıca web geliştirme ve veri analizi alanlarında kendimi geliştirmeye devam ediyorum.
-</p>
-
-<h3>Kullandığım Teknolojiler</h3>
-
-<dl>
-<dt><strong>Programlama Dilleri</strong></dt>
-<dd>Python, C, C++, Java</dd>
-
-<dt><strong>Veritabanı</strong></dt>
-<dd>Microsoft SQL Server, SSMS, SSIS</dd>
-
-<dt><strong>Gömülü Sistemler</strong></dt>
-<dd>Arduino ve temel devre uygulamaları</dd>
-</dl>
-
-</div>
-
-<aside class="sidebar">
-
-<h2>Ek Bilgi</h2>
-
-<p>
-Teknik becerilerimi hem derslerde hem de bireysel projelerde uygulamaya çalışıyorum.
-</p>
-
-<p>
-Yeni teknolojileri öğrenmek ve farklı projeler geliştirmek benim için önemli bir motivasyon kaynağıdır.
-</p>
-
-</aside>
-
-</main>
-
-<footer>
-<p>© 2026 CSS Temel Örnek Sayfa</p>
-</footer>
+  </div>
 
 </body>
 </html>
