@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Hakkımda | CSS Temel Ödevi</title>
-<link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <title>Hakkında | CSS Temel Ödevi</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>CSS Temel Ödevi</h1>
+  <div class="container">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+      <h1>CSS Temel Ödevi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html" class="active">Hakkında</a></li>
+          <li><a href="interests.html">Hizmetler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
+    <p class="intro">
+      Bu sayfada örnek bir hakkında bölümü yer almaktadır. Amaç, aynı düzeni koruyarak
+      farklı içerikler göstermektir.
+    </p>
 
-<div class="content">
+    <main>
+      <div class="content">
+        <h2>Hakkında</h2>
+        <p>
+          Bu örnek sayfa, HTML ve CSS kullanılarak hazırlanmıştır. Temel amaç, sayfa düzeni,
+          metin biçimlendirme ve bağlantı stillerini uygulamaktır.
+        </p>
+        <p>
+          Bu çalışmada başlıklar, paragraflar, menüler ve kutu yapıları kullanılarak sade bir tasarım oluşturulmuştur.
+        </p>
+      </div>
 
-<h2>Hakkımda</h2>
+      <aside class="sidebar">
+        <h2>Ek Bilgi</h2>
+        <p>
+          Hakkında sayfası, temel HTML etiketlerinin ve CSS ile yapılan biçimlendirmelerin
+          nasıl kullanılacağını göstermek için eklenmiştir.
+        </p>
+        <p>
+          Aynı şablonun farklı sayfalarda kullanılması, düzen açısından daha tutarlı bir görünüm sağlar.
+        </p>
+      </aside>
+    </main>
 
-<p>
-Marmara Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Yazılım geliştirme ve yapay zeka alanlarına ilgi duyuyorum.
-</p>
+    <footer>
+      <p>© 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.</p>
+    </footer>
 
-<p>
-Bu site Web Programlama dersi kapsamında hazırladığım basit bir HTML ve CSS çalışmasıdır. Amacım temel web sayfası düzenini oluşturmak ve CSS özelliklerini uygulamaktır.
-</p>
-
-</div>
-
-<aside class="sidebar">
-
-<h2>Zaman Çizelgesi</h2>
-
-<p>
-Eğitim hayatım boyunca yazılım geliştirme ve web teknolojileri konularında kendimi geliştirmeye çalışıyorum.
-</p>
-
-<p>
-Uzun vadede yapay zeka projelerinde uzmanlaşmayı hedefliyorum.
-</p>
-
-<ul>
-<li><strong>Eğitim:</strong> Bilgisayar Mühendisliği</li>
-<li><strong>Hedef:</strong> Yapay zeka projelerinde uzmanlaşmak</li>
-<li><strong>Odak:</strong> Web geliştirme ve veri analizi</li>
-</ul>
-
-</aside>
-
-</main>
-
-<footer>
-<p>© 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.</p>
-</footer>
+  </div>
 
 </body>
 </html>
