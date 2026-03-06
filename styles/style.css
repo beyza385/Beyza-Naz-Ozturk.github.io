@@ -14,23 +14,27 @@ header{
 background:#e6e6fa;
 padding:15px;
 border:1px solid #ccc;
-text-align:center;
+}
+
+header h1{
+display:inline-block;
+margin:0;
 }
 
 nav{
-margin:15px 0;
+float:right;
+margin-top:5px;
 }
 
 nav ul{
 list-style:none;
 padding:0;
 margin:0;
-text-align:center;
 }
 
 nav ul li{
 display:inline-block;
-margin-right:15px;
+margin-left:15px;
 }
 
 /* hiyerarşik seçici */
@@ -44,6 +48,12 @@ padding:5px 10px;
 /* hiyerarşik seçici */
 nav a:hover{
 color:blue;
+}
+
+header::after{
+content:"";
+display:block;
+clear:both;
 }
 
 main{
