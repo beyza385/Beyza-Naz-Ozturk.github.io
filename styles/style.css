@@ -1,140 +1,70 @@
-body{
-  font-family: Arial, sans-serif;
-  background:#f3f1f6;
-  margin:0;
-  color:#333;
+* {
 }
 
-/* grup seçici */
-h1, h2, p{
-  margin:0 0 12px 0;
+.timeline-list,
+.interest-list {
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
-.container{
-  width:900px;
-  margin:30px auto;
-  background:#f7f5fa;
-  border:1px solid #d8d5de;
+.timeline-list li,
+.interest-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: #374151;
 }
 
-header{
-  padding:18px 20px 12px 20px;
-  border-bottom:1px solid #cfd6e6;
-  background:#f7f5fa;
+.definition-list dt {
+  font-weight: bold;
+  color: #111827;
+  margin-top: 14px;
 }
 
-header h1{
-  display:inline-block;
-  font-size:31px;
-  color:#3b3b3b;
-  margin:0;
+.definition-list dd {
+  margin-left: 18px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  color: #4b5563;
+  line-height: 1.7;
 }
 
-nav{
-  float:right;
-  margin-top:4px;
+.page-card a,
+footer p a {
+  color: #4338ca;
+  text-decoration: none;
 }
 
-nav ul{
-  list-style:none;
-  padding:0;
-  margin:0;
+.page-card a:hover {
+  text-decoration: underline;
 }
 
-nav ul li{
-  display:inline-block;
-  margin-left:8px;
+footer {
+  width: 88%;
+  max-width: 1120px;
+  margin: 0 auto 40px;
+  background-color: #111827;
+  color: #f9fafb;
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
 }
 
-/* hiyerarşik seçici */
-nav a{
-  text-decoration:none;
-  color:#444;
-  font-size:14px;
-  padding:7px 12px;
-  border-radius:3px;
+footer p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* hiyerarşik seçici */
-nav a:hover{
-  background:#dfe7f7;
-  color:#2d5ea8;
-}
+@media (max-width: 900px) {
+  .content-box {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 
-nav a.active{
-  background:#7da2df;
-  color:white;
-}
-
-header::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-
-.intro{
-  padding:18px 20px;
-  line-height:1.7;
-  font-size:15px;
-  color:#444;
-}
-
-/* içerik alanı */
-main{
-  padding:0 20px 20px 20px;
-}
-
-.content{
-  width:48%;
-  display:inline-block;
-  vertical-align:top;
-  background:#f8edc9;
-  border:1px solid #d8c89a;
-  padding:16px;
-  box-sizing:border-box;
-  border-radius:3px;
-}
-
-.sidebar{
-  width:48%;
-  display:inline-block;
-  vertical-align:top;
-  background:#dcecf3;
-  border:1px solid #bdd2db;
-  padding:16px;
-  box-sizing:border-box;
-  margin-left:3%;
-  border-radius:3px;
-}
-
-/* hiyerarşik seçici */
-.content p{
-  font-size:15px;
-  line-height:1.8;
-  text-align:left;
-  color:#444;
-}
-
-/* hiyerarşik seçici */
-.sidebar p{
-  font-size:15px;
-  line-height:1.8;
-  text-align:left;
-  color:#444;
-}
-
-.content h2,
-.sidebar h2{
-  font-size:28px;
-  color:#4a4a4a;
-  margin-bottom:14px;
-}
-
-footer{
-  text-align:center;
-  padding:16px;
-  font-size:14px;
-  color:#777;
-  border-top:1px solid #ddd;
-  background:#f7f5fa;
+  .top-nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }
