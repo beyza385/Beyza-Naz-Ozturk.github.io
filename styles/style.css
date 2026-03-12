@@ -4,6 +4,10 @@ body {
   background-color: #f4f4f4;
 }
 
+h1, h2, p {
+  margin-top: 0;
+}
+
 nav {
   background-color: #333;
   padding: 15px;
@@ -37,39 +41,44 @@ header {
   background-color: white;
 }
 
+header p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .content {
   width: 80%;
   margin: 20px auto;
   font-size: 0;
 }
 
-.box {
+.content .box {
   display: inline-block;
-  width: 47%;
+  width: 48%;
   vertical-align: top;
   background-color: white;
   padding: 20px;
-  margin-right: 3%;
-  margin-bottom: 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
-.box:last-child {
-  margin-right: 0;
+.content .box:first-child {
+  margin-right: 4%;
 }
 
-.box h2 {
+.content .box h2 {
   font-size: 20px;
   color: #000;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
-.box p {
+.content .box p {
   font-size: 16px;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
   text-align: justify;
 }
 
