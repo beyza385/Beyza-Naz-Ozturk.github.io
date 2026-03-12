@@ -1,3 +1,5 @@
+/* Genel sayfa ayarları */
+
 body {
 
 font-family: Arial, sans-serif;
@@ -5,6 +7,8 @@ margin: 0;
 background-color: #f4f4f4;
 
 }
+
+/* NAVBAR */
 
 nav {
 
@@ -22,12 +26,16 @@ text-align: center;
 
 }
 
+/* Menü yatay */
+
 nav ul li {
 
 display: inline-block;
 margin: 0 15px;
 
 }
+
+/* Menü linkleri */
 
 nav ul li a {
 
@@ -37,11 +45,15 @@ font-size: 16px;
 
 }
 
+/* Hover efekti */
+
 nav ul li a:hover {
 
 color: #ffcc00;
 
 }
+
+/* HEADER */
 
 header {
 
@@ -51,13 +63,16 @@ background-color: white;
 
 }
 
+/* ANA CONTENT ALANI */
+
 .content {
 
 width: 80%;
-margin: auto;
-margin-top: 20px;
+margin: 20px auto;
 
 }
+
+/* KUTULAR */
 
 .box {
 
@@ -66,10 +81,21 @@ width: 48%;
 vertical-align: top;
 background-color: white;
 padding: 20px;
-margin: 1%;
+margin-right: 2%;
+margin-bottom: 20px;
 box-sizing: border-box;
 
 }
+
+/* Son kutuda margin olmasın */
+
+.box:last-child {
+
+margin-right: 0;
+
+}
+
+/* Metin düzenleme */
 
 .box p {
 
@@ -79,6 +105,8 @@ line-height: 1.6;
 text-align: justify;
 
 }
+
+/* FOOTER */
 
 footer {
 
