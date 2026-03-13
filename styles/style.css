@@ -82,6 +82,62 @@ header p {
   text-align: justify;
 }
 
+/* İletişim formu alanı */
+.contact-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.contact-container h2 {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.contact-container label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-container input,
+.contact-container select,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container textarea {
+  resize: vertical;
+}
+
+.contact-container button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #555;
+}
+
 footer {
   text-align: center;
   padding: 20px;
