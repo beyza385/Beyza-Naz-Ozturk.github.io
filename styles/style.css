@@ -110,17 +110,21 @@ header p {
 .contact-container input[type="text"],
 .contact-container input[type="email"],
 .contact-container input[type="password"],
-.contact-container input[type="file"],
 .contact-container select,
 .contact-container textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   border: 1px solid #aaa;
   border-radius: 6px;
   font-size: 16px;
   font-family: Arial, sans-serif;
+}
+
+.contact-container input[type="file"] {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .contact-container textarea {
@@ -129,8 +133,8 @@ header p {
 
 .option-box {
   width: 100%;
-  padding: 12px 16px;
-  margin-bottom: 18px;
+  padding: 16px 18px;
+  margin-bottom: 22px;
   box-sizing: border-box;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -138,9 +142,12 @@ header p {
 }
 
 .inline-option {
-  display: block;
-  font-weight: normal;
-  margin-bottom: 10px;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal !important;
+  margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .inline-option:last-child {
@@ -150,11 +157,21 @@ header p {
 .inline-option input[type="radio"],
 .inline-option input[type="checkbox"] {
   width: auto;
-  margin-right: 10px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.inline-option span {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
 }
 
 .button-group {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
   margin-top: 10px;
 }
 
@@ -171,7 +188,6 @@ header p {
 
 .send-btn {
   background-color: #007bff;
-  margin-right: 4%;
 }
 
 .clear-btn {
