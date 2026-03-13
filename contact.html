@@ -21,7 +21,7 @@
     <p>Benimle iletişime geçebileceğiniz bilgiler.</p>
   </header>
 
-  <main class="content-wrapper">
+  <main>
     <section class="content">
       <div class="box">
         <h2>İletişim Notu</h2>
@@ -37,15 +37,16 @@
     </section>
 
     <div class="contact-container">
-      <h2>İletişim Formu</h2>
+      <h2>Detaylı İletişim Formu</h2>
+
       <form action="#" method="post">
-        <label for="adsoyad">Ad Soyad</label>
-        <input type="text" id="adsoyad" name="adsoyad">
+        <label for="adsoyad">Ad Soyad:</label>
+        <input type="text" id="adsoyad" name="adsoyad" placeholder="Örn: Beyza Naz Öztürk">
 
-        <label for="email">E-posta</label>
-        <input type="email" id="email" name="email">
+        <label for="email">E-posta Adresi:</label>
+        <input type="email" id="email" name="email" placeholder="beyzanazozturk53@gmail.com">
 
-        <label for="konu">Konu</label>
+        <label for="konu">Konu:</label>
         <select id="konu" name="konu">
           <option value="">Seçiniz</option>
           <option value="is-teklifi">İş Teklifi</option>
@@ -53,8 +54,8 @@
           <option value="geri-bildirim">Geri Bildirim</option>
         </select>
 
-        <label for="mesaj">Mesaj</label>
-        <textarea id="mesaj" name="mesaj" rows="6"></textarea>
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" rows="6" placeholder="Mesajınızı buraya yazın"></textarea>
 
         <button type="submit">Gönder</button>
       </form>
