@@ -85,18 +85,20 @@ header p {
 /* İletişim formu alanı */
 .contact-container {
   width: 80%;
-  margin: 20px auto;
-  padding: 25px;
+  margin: 20px auto 30px auto;
+  padding: 30px;
   background-color: white;
   border: 2px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
+  clear: both;
 }
 
 .contact-container h2 {
   font-size: 22px;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .contact-container label {
@@ -128,7 +130,7 @@ header p {
   background-color: #333;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
