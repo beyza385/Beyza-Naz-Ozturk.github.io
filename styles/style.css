@@ -236,9 +236,8 @@ footer {
 }
 
 .projects-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .projects-header {
@@ -395,3 +394,5 @@ footer {
   align-items: center;
   padding: 20px 0;
 }
+
+
