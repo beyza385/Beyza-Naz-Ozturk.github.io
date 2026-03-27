@@ -236,10 +236,9 @@ footer {
 }
 
 .projects-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
 }
 
 .projects-header {
@@ -261,7 +260,7 @@ footer {
 }
 
 .projects-hero {
-  height: 30vh;
+  min-height: 30vh;
   width: 80%;
   margin: 20px auto;
   display: flex;
@@ -323,7 +322,7 @@ footer {
 }
 
 .projects-cards {
-  height: 30vh;
+  min-height: 30vh;
   width: 80%;
   margin: 0 auto 20px auto;
   display: flex;
@@ -338,7 +337,6 @@ footer {
   background-color: white;
   padding: 20px;
   box-sizing: border-box;
-  overflow: auto;
 }
 
 .project-card h2 {
@@ -355,9 +353,9 @@ footer {
 }
 
 .projects-grow {
-  height: 20vh;
+  min-height: 20vh;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   display: flex;
   align-items: stretch;
   gap: 15px;
@@ -388,11 +386,12 @@ footer {
 }
 
 .projects-footer {
-  height: 10vh;
+  min-height: 10vh;
   background-color: #333;
   color: white;
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
