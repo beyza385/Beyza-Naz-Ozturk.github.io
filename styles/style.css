@@ -209,3 +209,189 @@ footer {
   color: white;
   margin-top: 30px;
 }
+
+.project-button-area {
+  margin-top: 25px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.project-button:hover {
+  color: #ffcc00;
+}
+
+/* PROJELERIM SAYFASI */
+
+.projects-page {
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.projects-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-header {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+}
+
+.projects-header h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.projects-header p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.projects-hero {
+  height: 30vh;
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 4%;
+}
+
+.hero-left,
+.hero-right {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h2,
+.hero-right h2 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hero-left p,
+.hero-right p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.hero-link-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.hero-link-button:hover {
+  color: #ffcc00;
+}
+
+.projects-cards {
+  height: 30vh;
+  width: 80%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-content: flex-start;
+  box-sizing: border-box;
+}
+
+.project-card {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.project-card h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.projects-grow {
+  height: 20vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.grow-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.grow-one {
+  flex-grow: 1;
+}
+
+.grow-two {
+  flex-grow: 2;
+}
+
+.grow-three {
+  flex-grow: 1;
+}
+
+.projects-footer {
+  height: 10vh;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
