@@ -453,8 +453,13 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 20px 60px rgba(190, 160, 255, 0.18);
   backdrop-filter: blur(10px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.event-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 28px 70px rgba(190, 160, 255, 0.28);
+}
 /* soft arka plan efektleri */
 .event-card::before,
 .event-card::after {
