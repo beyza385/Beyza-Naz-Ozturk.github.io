@@ -408,4 +408,143 @@ footer {
   padding: 20px 0;
 }
 
+/* ================= LAB POSITION ================= */
+
+.lab-page {
+  background-color: #f4f4f4;
+}
+
+.lab-header {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+}
+
+.lab-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* RELATIVE */
+.announcement-card {
+  position: relative;
+  background-color: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.announcement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ABSOLUTE BADGES */
+.badge {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.badge:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.badge-date {
+  top: 15px;
+  left: 15px;
+}
+
+.badge-place {
+  top: 15px;
+  right: 15px;
+}
+
+.badge-free {
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Z-INDEX */
+.circle-bg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  top: 30px;
+  right: 40px;
+  opacity: 0.2;
+  z-index: 1;
+  animation: float 3s infinite;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* FIXED */
+.fixed-help {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.fixed-help:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+/* FOOTER */
+.lab-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
