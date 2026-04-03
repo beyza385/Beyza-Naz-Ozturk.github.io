@@ -13,47 +13,79 @@
       <li><a href="about.html">Hakkımda</a></li>
       <li><a href="interests.html">İlgi Alanlarım</a></li>
       <li><a href="contact.html">İletişim</a></li>
-      <li><a href="lab-position.html">Lab Position</a></li>
+      <li><a href="lab_position.html">Lab Position</a></li>
     </ul>
   </nav>
 
-  <!-- FIXED ELEMENT -->
-  <a href="index.html" class="fixed-help">Ana Sayfa</a>
-
   <header class="lab-header">
     <h1>Kampüs Duyurusu</h1>
-    <p>CSS Position kullanılarak hazırlanmış etkileşimli kart</p>
+    <p>CSS Position kullanılarak hazırlanmış etkileşimli etkinlik kartı</p>
   </header>
 
   <main class="lab-container">
+    <input type="checkbox" id="toggle-detail">
 
-    <!-- RELATIVE CONTAINER -->
-    <section class="announcement-card">
+    <section class="event-card">
+      <span class="event-badge">12 HAZİRAN 2026</span>
 
-      <!-- ABSOLUTE ELEMENTS -->
-      <span class="badge badge-date">12 Mayıs</span>
-      <span class="badge badge-place">Marmara</span>
-      <span class="badge badge-free">Ücretsiz</span>
+      <div class="event-content">
+        <h2>Summer Talks Night</h2>
 
-      <!-- Z-INDEX ELEMENT -->
-      <div class="circle-bg"></div>
-
-      <div class="card-content">
-        <h2>Yapay Zeka Etkinliği</h2>
-        <p>
-          Yapay zeka, yazılım ve kariyer üzerine konuşmaların yapılacağı bu etkinlikte
-          sektör profesyonelleri ile tanışma fırsatı bulacaksınız.
+        <p class="event-intro">
+          Gün batımının pastel tonlarından ilham alan bu özel akşam, ilham veren konuşmalar ve keyifli anlarla dolu, sade ama zarif bir deneyim sunar.
         </p>
 
-        <div class="buttons">
-          <a href="#" class="btn">Detay</a>
-          <a href="#" class="btn">Katıl</a>
-          <a href="#" class="btn">Takvim</a>
+        <div class="event-info-box">
+          <div class="event-info-inner">
+            <div class="event-info-row">
+              <div>
+                <p class="event-label">Yer</p>
+                <p class="event-value">Marmara Sahne Salonu</p>
+              </div>
+
+              <div class="event-divider"></div>
+
+              <div>
+                <p class="event-label">Saat</p>
+                <p class="event-value">19:30</p>
+              </div>
+            </div>
+
+            <label for="toggle-detail" class="event-detail-btn">
+              <span class="open-text">Detayları Gör</span>
+              <span class="close-text">Detayı Kapat</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="event-details">
+          <div class="event-details-inner">
+            <div class="event-detail-card">
+              <h3>ETKİNLİK DETAYI</h3>
+              <p>
+                Açılış konuşmasıyla başlayacak etkinlik, kısa ilham oturumları ve keyifli bir networking bölümüyle devam eder. Minimal tasarım ve soft renk geçişleriyle sakin ama etkileyici bir atmosfer sunar.
+              </p>
+            </div>
+
+            <div class="event-mini-grid">
+              <div class="event-mini-card">
+                <h3>İÇERİK</h3>
+                <p>
+                  Konuşmalar, mini deneyim alanı ve sosyal etkileşim bölümüyle dengeli bir akşam programı sunulur.
+                </p>
+              </div>
+
+              <div class="event-mini-card">
+                <h3>ATMOSFER</h3>
+                <p>
+                  Açık hava hissi veren ferah bir ortam, canlı konuşmalar, hafif müzik ve gün batımına eşlik eden sıcak bir etkinlik akışı.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
-
   </main>
 
   <footer class="lab-footer">
