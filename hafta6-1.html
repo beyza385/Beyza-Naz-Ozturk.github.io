@@ -2,31 +2,58 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Hafta 6 - Not Hesaplama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 6 - 1 | Not Hesaplama</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Ana Sayfa</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="about.html">Hakkımda</a></li>
+      <li><a href="interests.html">İlgi Alanlarım</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+      <li><a href="lab_position.html">Lab Position</a></li>
+    </ul>
+  </nav>
 
-<header>
-  <h1>Öğrenci Not Hesaplama</h1>
-</header>
+  <header class="week-header">
+    <h1>Öğrenci Not Hesaplama</h1>
+    <p>Vize ve final notuna göre ortalama, harf notu ve geçme durumu hesaplanır.</p>
+  </header>
 
-<div class="form-container">
-  <input type="text" id="name" placeholder="Ad Soyad">
-  <input type="number" id="vize" placeholder="Vize Notu">
-  <input type="number" id="final" placeholder="Final Notu">
+  <main class="week-page">
+    <section class="week-card">
+      <h2>Not Bilgileri</h2>
 
-  <button onclick="hesapla()">Hesapla</button>
+      <div class="modern-form">
+        <div class="form-group">
+          <label for="name">Ad Soyad</label>
+          <input type="text" id="name" placeholder="Ad Soyad giriniz">
+        </div>
 
-  <div id="result"></div>
-</div>
+        <div class="form-group">
+          <label for="vize">Vize Notu</label>
+          <input type="number" id="vize" placeholder="Vize notu giriniz">
+        </div>
 
-<script src="js/hafta6-1.js"></script>
+        <div class="form-group">
+          <label for="final">Final Notu</label>
+          <input type="number" id="final" placeholder="Final notu giriniz">
+        </div>
+
+        <button type="button" class="modern-btn" onclick="hesapla()">Hesapla</button>
+      </div>
+
+      <div id="result" class="result-card"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Beyza Naz Öztürk</p>
+  </footer>
+
+  <script src="js/hafta6-1.js"></script>
 </body>
 </html>
