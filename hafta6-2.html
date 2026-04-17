@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
   <nav>
     <ul>
       <li><a href="index.html">Ana Sayfa</a></li>
@@ -26,13 +25,11 @@
   <main class="week-page">
     <section class="week-card">
       <h2>Dönüşüm Formu</h2>
-
       <div class="modern-form">
         <div class="form-group">
           <label for="value">Değer</label>
           <input type="number" id="value" placeholder="Dönüştürülecek değeri giriniz">
         </div>
-
         <div class="form-group">
           <label for="type">Dönüşüm Tipi</label>
           <select id="type">
@@ -41,11 +38,9 @@
             <option value="kgToGram">Kilogram → Gram</option>
           </select>
         </div>
-
         <button type="button" class="modern-btn" onclick="donustur()">Hesapla</button>
       </div>
-
-      <div id="convertResult" class="result-card"></div>
+      <div id="convertResult" class="result-card" style="display:none;"></div>
     </section>
   </main>
 
