@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hafta 6 - Birim Dönüştürücü</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Birim Dönüştürücü</h1>
+</header>
+
+<div class="form-container">
+  <input type="number" id="value" placeholder="Değer Giriniz">
+
+  <select id="type">
+    <option value="cf">Celsius → Fahrenheit</option>
+    <option value="km">Metre → Kilometre</option>
+    <option value="kg">Kilogram → Gram</option>
+  </select>
+
+  <button onclick="donustur()">Hesapla</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="js/hafta6-2.js"></script>
+</body>
+</html>
