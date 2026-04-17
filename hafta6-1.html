@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
   <nav>
     <ul>
       <li><a href="index.html">Ana Sayfa</a></li>
@@ -19,34 +18,29 @@
   </nav>
 
   <header class="week-header">
-    <h1>Öğrenci Not Hesaplama</h1>
-    <p>Vize ve final notuna göre ortalama, harf notu ve geçme durumu hesaplanır.</p>
+    <h1>Not Hesaplama</h1>
+    <p>Vize (%40) ve final (%60) notlarından harf notu hesaplar.</p>
   </header>
 
   <main class="week-page">
     <section class="week-card">
-      <h2>Not Bilgileri</h2>
-
+      <h2>Not Formu</h2>
       <div class="modern-form">
         <div class="form-group">
           <label for="name">Ad Soyad</label>
-          <input type="text" id="name" placeholder="Ad Soyad giriniz">
+          <input type="text" id="name" placeholder="Öğrenci adını giriniz">
         </div>
-
         <div class="form-group">
-          <label for="vize">Vize Notu</label>
-          <input type="number" id="vize" placeholder="Vize notu giriniz">
+          <label for="vize">Vize Notu (0–100)</label>
+          <input type="number" id="vize" placeholder="0" min="0" max="100">
         </div>
-
         <div class="form-group">
-          <label for="final">Final Notu</label>
-          <input type="number" id="final" placeholder="Final notu giriniz">
+          <label for="final">Final Notu (0–100)</label>
+          <input type="number" id="final" placeholder="0" min="0" max="100">
         </div>
-
         <button type="button" class="modern-btn" onclick="hesapla()">Hesapla</button>
       </div>
-
-      <div id="result" class="result-card"></div>
+      <div id="result" class="result-card" style="display:none;"></div>
     </section>
   </main>
 
@@ -56,4 +50,4 @@
 
   <script src="js/hafta6-1.js"></script>
 </body>
-</html>
+</html> 
