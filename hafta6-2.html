@@ -2,35 +2,57 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Hafta 6 - Birim Dönüştürücü</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 6 - 2 | Birim Dönüştürücü</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Ana Sayfa</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="about.html">Hakkımda</a></li>
+      <li><a href="interests.html">İlgi Alanlarım</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+      <li><a href="lab_position.html">Lab Position</a></li>
+    </ul>
+  </nav>
 
-<header>
-  <h1>Birim Dönüştürücü</h1>
-</header>
+  <header class="week-header">
+    <h1>Birim Dönüştürücü</h1>
+    <p>Seçilen dönüşüm türüne göre değeri otomatik olarak hesaplar.</p>
+  </header>
 
-<div class="form-container">
-  <input type="number" id="value" placeholder="Değer Giriniz">
+  <main class="week-page">
+    <section class="week-card">
+      <h2>Dönüşüm Formu</h2>
 
-  <select id="type">
-    <option value="cf">Celsius → Fahrenheit</option>
-    <option value="km">Metre → Kilometre</option>
-    <option value="kg">Kilogram → Gram</option>
-  </select>
+      <div class="modern-form">
+        <div class="form-group">
+          <label for="value">Değer</label>
+          <input type="number" id="value" placeholder="Dönüştürülecek değeri giriniz">
+        </div>
 
-  <button onclick="donustur()">Hesapla</button>
+        <div class="form-group">
+          <label for="type">Dönüşüm Tipi</label>
+          <select id="type">
+            <option value="meterToKm">Metre → Kilometre</option>
+            <option value="celsiusToFahrenheit">Celsius → Fahrenheit</option>
+            <option value="kgToGram">Kilogram → Gram</option>
+          </select>
+        </div>
 
-  <div id="result"></div>
-</div>
+        <button type="button" class="modern-btn" onclick="donustur()">Hesapla</button>
+      </div>
 
-<script src="js/hafta6-2.js"></script>
+      <div id="convertResult" class="result-card"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Beyza Naz Öztürk</p>
+  </footer>
+
+  <script src="js/hafta6-2.js"></script>
 </body>
 </html>
