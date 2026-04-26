@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 7 | Bootstrap Basvuru Sayfasi</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="week7-page">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Beyza Naz Ozturk</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Navigasyonu ac">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Hakkimda</a></li>
+          <li class="nav-item"><a class="nav-link" href="interests.html">Ilgi Alanlarim</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Iletisim</a></li>
+          <li class="nav-item"><a class="nav-link" href="lab_position.html">Lab Position</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 week7-hero-area">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <h1 class="display-5 fw-bold mb-3">Hafta 7 Bootstrap Uygulamasi</h1>
+          <p class="lead mb-4">
+            Bu sayfada Bootstrap bileşenleri ile responsive bir yerlesim, tema degistirme ve form verilerinden dinamik basvuru ozeti olusturma ozellikleri birlikte sunuluyor.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <button id="themeToggleBtn" type="button" class="btn btn-outline-dark btn-lg">Temayi Degistir</button>
+            <a href="#basvuru-formu" class="btn btn-dark btn-lg">Basvuru Formuna Git</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="p-4 bg-white border rounded-3 shadow-sm">
+            <h2 class="h4 mb-3">Kisa Bilgi</h2>
+            <p class="mb-0 text-secondary">
+              Tema degisimi JavaScript ile anlik uygulanir. Form gonderiminde sayfa yenilenmez, eksik alanlar kontrol edilir ve basarili durumda sonuc alani otomatik doldurulur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pb-5">
+    <section class="container mb-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title h5">Bootstrap Navbar</h2>
+              <p class="card-text text-secondary">Ust alanda responsive navbar ile mobil ve masaustu uyumlu bir gezinme sunulur.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Hazir Bilesen</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title h5">Bootstrap Grid</h2>
+              <p class="card-text text-secondary">Container, row ve col yapisiyla kartlar ve form her ekranda dengeli gorunur.</p>
+              <a href="#basvuru-formu" class="btn btn-sm btn-outline-secondary">Formu Incele</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title h5">Dinamik Sonuc</h2>
+              <p class="card-text text-secondary">Form bilgileri dogrulama sonrasi ozet kartina donusturulerek aninda gosterilir.</p>
+              <a href="#sonuc-alani" class="btn btn-sm btn-outline-secondary">Sonucu Gor</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="basvuru-formu" class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-3">Basvuru Formu</h2>
+              <form id="applicationForm" novalidate>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Ad Soyad</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Adinizi ve soyadinizi yaziniz">
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-posta</label>
+                  <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
+                </div>
+
+                <div class="mb-3">
+                  <label for="department" class="form-label">Bolum</label>
+                  <select id="department" class="form-select">
+                    <option value="" selected>Bolum seciniz</option>
+                    <option value="Bilgisayar Muhendisligi">Bilgisayar Muhendisligi</option>
+                    <option value="Yazilim Muhendisligi">Yazilim Muhendisligi</option>
+                    <option value="Yonetim Bilisim Sistemleri">Yonetim Bilisim Sistemleri</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="motivation" class="form-label">Neden basvuruyorsunuz?</label>
+                  <textarea id="motivation" class="form-control" rows="4" placeholder="Kisa bir aciklama yaziniz"></textarea>
+                </div>
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="agreement">
+                  <label class="form-check-label" for="agreement">
+                    Basvuru kosullarini okudum ve kabul ediyorum.
+                  </label>
+                </div>
+
+                <div id="formAlert" class="alert alert-danger d-none" role="alert"></div>
+
+                <button type="submit" class="btn btn-primary">Basvuruyu Gonder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div id="sonuc-alani" class="card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-3">Basvuru Ozeti</h2>
+              <p id="emptyResultText" class="text-secondary mb-0">Form gonderildiginde basvuru ozeti bu alanda gorunecektir.</p>
+              <div id="resultArea" class="d-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-3 mt-auto">
+    <div class="container text-center">
+      <small>© 2026 Beyza Naz Ozturk | Hafta 7 Uygulamasi</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="scripts/hafta7.js"></script>
+</body>
+</html>
