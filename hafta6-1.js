@@ -7,19 +7,19 @@ function hesapla() {
   result.style.display = "block";
 
   if (name === "" || isNaN(vize) || isNaN(finalNotu)) {
-    result.innerHTML = `<p class="result-error">Lütfen tüm alanları doğru şekilde doldurun.</p>`;
+    result.innerHTML = '<p class="result-error">Lütfen tüm alanları doğru şekilde doldurun.</p>';
     return;
   }
 
   if (vize < 0 || vize > 100 || finalNotu < 0 || finalNotu > 100) {
-    result.innerHTML = `<p class="result-error">Notlar 0 ile 100 arasında olmalıdır.</p>`;
+    result.innerHTML = '<p class="result-error">Notlar 0 ile 100 arasında olmalıdır.</p>';
     return;
   }
 
   const ortalama = (vize * 0.4) + (finalNotu * 0.6);
 
   let harfNotu = "";
-  if (ortalama >= 90)      harfNotu = "AA";
+  if (ortalama >= 90) harfNotu = "AA";
   else if (ortalama >= 85) harfNotu = "BA";
   else if (ortalama >= 80) harfNotu = "BB";
   else if (ortalama >= 75) harfNotu = "CB";
@@ -27,11 +27,11 @@ function hesapla() {
   else if (ortalama >= 65) harfNotu = "DC";
   else if (ortalama >= 60) harfNotu = "DD";
   else if (ortalama >= 50) harfNotu = "FD";
-  else                     harfNotu = "FF";
+  else harfNotu = "FF";
 
   const gecti = ortalama >= 50;
   const durumClass = gecti ? "success-text" : "fail-text";
-  const durum = gecti ? "Geçti ✓" : "Kaldı ✗";
+  const durum = gecti ? "Geçti" : "Kaldı";
 
   result.innerHTML = `
     <h3>${name}</h3>

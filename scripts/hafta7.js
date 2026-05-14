@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggleBtn.addEventListener("click", () => {
       body.classList.toggle("theme-dark");
       const darkModeEnabled = body.classList.contains("theme-dark");
-      themeToggleBtn.textContent = darkModeEnabled ? "Acik Temaya Don" : "Temayi Degistir";
+      themeToggleBtn.textContent = darkModeEnabled ? "Açık Temaya Dön" : "Temayı Değiştir";
       themeToggleBtn.classList.toggle("btn-outline-dark", !darkModeEnabled);
       themeToggleBtn.classList.toggle("btn-outline-light", darkModeEnabled);
     });
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!fullName) missingFields.push("Ad Soyad");
     if (!email) missingFields.push("E-posta");
-    if (!department) missingFields.push("Bolum");
-    if (!motivation) missingFields.push("Motivasyon yazisi");
-    if (!agreement) missingFields.push("Kosullari kabul");
+    if (!department) missingFields.push("Bölüm");
+    if (!motivation) missingFields.push("Motivasyon yazısı");
+    if (!agreement) missingFields.push("Koşulları kabul");
 
     if (missingFields.length > 0) {
-      formAlert.textContent = `Eksik alanlar: ${missingFields.join(", ")}. Lutfen tum alanlari doldurun.`;
+      formAlert.textContent = `Eksik alanlar: ${missingFields.join(", ")}. Lütfen tüm alanları doldurun.`;
       formAlert.classList.remove("d-none", "alert-success");
       formAlert.classList.add("alert-danger");
       emptyResultText.classList.remove("d-none");
@@ -46,17 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    formAlert.textContent = "Basvurunuz basariyla alindi.";
+    formAlert.textContent = "Başvurunuz başarıyla alındı.";
     formAlert.classList.remove("d-none", "alert-danger");
     formAlert.classList.add("alert-success");
 
     resultArea.innerHTML = `
       <div class="card border-success mt-2">
         <div class="card-body">
-          <h3 class="h5 card-title text-success">Basvuru Ozeti</h3>
+          <h3 class="h5 card-title text-success">Başvuru Özeti</h3>
           <p class="mb-2"><strong>Ad Soyad:</strong> ${fullName}</p>
           <p class="mb-2"><strong>E-posta:</strong> ${email}</p>
-          <p class="mb-2"><strong>Bolum:</strong> ${department}</p>
+          <p class="mb-2"><strong>Bölüm:</strong> ${department}</p>
           <p class="mb-0"><strong>Motivasyon:</strong> ${motivation}</p>
         </div>
       </div>

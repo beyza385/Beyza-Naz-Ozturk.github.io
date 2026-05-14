@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hafta 6 - 1 | Not Hesaplama</title>
+  <title>Hafta 6-1 | Not Hesaplama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-      <li><a href="lab_position.html">Lab Position</a></li>
-    </ul>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="index.html#top">Ana Sayfa</a>
+        <a href="contact.html">İletişim Formu</a>
+        <a href="projelerim.html">Flex Box</a>
+        <a href="lab_position.html">Position</a>
+        <a href="hafta6-1.html" aria-current="page">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
   </nav>
 
   <header class="week-header">
-    <h1>Not Hesaplama</h1>
-    <p>Vize (%40) ve final (%60) notlarından harf notu hesaplar.</p>
+    <section class="page-banner">
+      <span class="eyebrow">Hafta 6-1</span>
+      <h1>Not Hesaplama</h1>
+      <p>Vize ve final notlarından ortalama, harf notu ve geçme durumunu hesaplayan JavaScript uygulaması.</p>
+    </section>
   </header>
 
   <main class="week-page">
@@ -31,23 +43,24 @@
           <input type="text" id="name" placeholder="Öğrenci adını giriniz">
         </div>
         <div class="form-group">
-          <label for="vize">Vize Notu (0–100)</label>
+          <label for="vize">Vize Notu (0-100)</label>
           <input type="number" id="vize" placeholder="0" min="0" max="100">
         </div>
         <div class="form-group">
-          <label for="final">Final Notu (0–100)</label>
+          <label for="final">Final Notu (0-100)</label>
           <input type="number" id="final" placeholder="0" min="0" max="100">
         </div>
         <button type="button" class="modern-btn" onclick="hesapla()">Hesapla</button>
       </div>
-      <div id="result" class="result-card" style="display:none;"></div>
+      <div id="result" class="result-card" style="display: none;"></div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2026 Beyza Naz Öztürk</p>
   </footer>
 
+  <script src="scripts/main.js"></script>
   <script src="hafta6-1.js"></script>
 </body>
-</html> 
+</html>

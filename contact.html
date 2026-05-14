@@ -2,109 +2,172 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>İletişim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 3 | İletişim Formu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-    </ul>
+<body class="contact-page">
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="index.html#top">Ana Sayfa</a>
+        <a href="contact.html" aria-current="page">İletişim Formu</a>
+        <a href="projelerim.html">Flex Box</a>
+        <a href="lab_position.html">Position</a>
+        <a href="hafta6-1.html">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <h1>İletişim</h1>
-    <p>Benimle iletişime geçebileceğiniz bilgiler.</p>
+  <header class="page-hero">
+    <div class="section-shell page-grid">
+      <section class="page-banner">
+        <span class="eyebrow">Hafta 3</span>
+        <h1>İletişim Formu</h1>
+        <p>
+          Eski iletişim sayfasındaki detaylı form bu ayrı laboratuvar sayfasına taşındı.
+          Ana sayfadaki iletişim bilgileri korunurken form alanı daha odaklı ve düzenli bir yapıya dönüştürüldü.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Dosya yükleme</span>
+          <span class="pill">Radio ve checkbox alanları</span>
+          <span class="pill">Responsive form düzeni</span>
+        </div>
+      </section>
+
+      <aside class="info-shell">
+        <h2>Hızlı Notlar</h2>
+        <div class="info-list">
+          <article class="info-item">
+            <strong>İletişim bilgileri</strong>
+            <p>GitHub ve e-posta bilgileri ana sayfadaki “İletişim Bilgileri” bölümünde yer almaya devam eder.</p>
+          </article>
+          <article class="info-item">
+            <strong>Navigasyon</strong>
+            <p>Bu sayfaya hem navbar üzerinden hem de ana sayfanın altındaki Hafta 3 butonundan ulaşabilirsiniz.</p>
+          </article>
+          <article class="info-item">
+            <strong>Dosya yolu</strong>
+            <p>Mevcut contact.html bağlantısı korunarak sayfa yeniden yapılandırıldı.</p>
+          </article>
+        </div>
+      </aside>
+    </div>
   </header>
 
-  <main>
-    <section class="content">
-      <div class="box">
-        <h2>İletişim Notu</h2>
-        <p>Projeler, iş birlikleri veya akademik çalışmalar hakkında benimle iletişime geçebilirsiniz.</p>
-        <p>GitHub üzerinden projelerimi inceleyebilir veya e-posta yoluyla benimle iletişime geçebilirsiniz.</p>
-      </div>
-
-      <div class="box">
+  <main class="section">
+    <div class="section-shell page-grid contact-layout">
+      <section class="info-shell">
         <h2>Bağlantılar</h2>
-        <p>GitHub: github.com/beyza385</p>
-        <p>E-posta: beyzanazozturkk@gmail.com</p>
-      </div>
-    </section>
-
-    <div class="contact-container">
-      <h2>Detaylı İletişim Formu</h2>
-
-      <form action="#" method="post" enctype="multipart/form-data">
-        <label for="adsoyad">Ad Soyad:</label>
-        <input type="text" id="adsoyad" name="adsoyad" placeholder="Örn: Beyza Naz Öztürk">
-
-        <label for="email">E-posta Adresi:</label>
-        <input type="email" id="email" name="email" placeholder="ornek@mail.com">
-
-        <label for="sifre">Başvuru Takip Şifresi:</label>
-        <input type="password" id="sifre" name="sifre" placeholder="Şifrenizi girin">
-
-        <label>İletişim Tercihi:</label>
-        <div class="option-box">
-          <label class="inline-option">
-            <input type="radio" name="iletisim" value="eposta" checked>
-            <span>Bana e-posta ile ulaşın</span>
-          </label>
-
-          <label class="inline-option">
-            <input type="radio" name="iletisim" value="telefon">
-            <span>Bana telefonla ulaşın</span>
-          </label>
+        <div class="info-list">
+          <a class="contact-link" href="mailto:beyzanazozturkk@gmail.com">
+            <span>E-posta</span>
+            <strong>beyzanazozturkk@gmail.com</strong>
+          </a>
+          <a class="contact-link" href="https://github.com/beyza385" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/beyza385</strong>
+          </a>
+          <a class="contact-link" href="index.html#iletisim-bilgileri">
+            <span>Ana Sayfa</span>
+            <strong>İletişim bilgileri bölümüne dön</strong>
+          </a>
         </div>
+      </section>
 
-        <label>İlgi Alanları / Yetenekler:</label>
-        <div class="option-box">
-          <label class="inline-option">
-            <input type="checkbox" name="yetenek" value="html">
-            <span>HTML</span>
-          </label>
+      <section class="form-shell">
+        <h2>Detaylı İletişim Formu</h2>
 
-          <label class="inline-option">
-            <input type="checkbox" name="yetenek" value="css">
-            <span>CSS</span>
-          </label>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="adsoyad">Ad Soyad</label>
+              <input type="text" id="adsoyad" name="adsoyad" placeholder="Örn: Beyza Naz Öztürk">
+            </div>
 
-          <label class="inline-option">
-            <input type="checkbox" name="yetenek" value="algoritma">
-            <span>Algoritma</span>
-          </label>
-        </div>
+            <div class="form-field">
+              <label for="email">E-posta Adresi</label>
+              <input type="email" id="email" name="email" placeholder="ornek@mail.com">
+            </div>
 
-        <label for="konu">Konu:</label>
-        <select id="konu" name="konu">
-          <option value="">Lütfen bir konu seçin...</option>
-          <option value="is-teklifi">İş Teklifi</option>
-          <option value="soru">Soru</option>
-          <option value="geri-bildirim">Geri Bildirim</option>
-        </select>
+            <div class="form-field form-field--full">
+              <label for="sifre">Başvuru Takip Şifresi</label>
+              <input type="password" id="sifre" name="sifre" placeholder="Şifrenizi girin">
+            </div>
 
-        <label for="dosya">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
-        <input type="file" id="dosya" name="dosya">
+            <div class="form-field form-field--full">
+              <label>İletişim Tercihi</label>
+              <div class="option-box">
+                <label class="inline-option">
+                  <input type="radio" name="iletisim" value="eposta" checked>
+                  <span>Bana e-posta ile ulaşın</span>
+                </label>
+                <label class="inline-option">
+                  <input type="radio" name="iletisim" value="telefon">
+                  <span>Bana telefonla ulaşın</span>
+                </label>
+              </div>
+            </div>
 
-        <label for="mesaj">Mesajınız:</label>
-        <textarea id="mesaj" name="mesaj" rows="7" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+            <div class="form-field form-field--full">
+              <label>İlgi Alanları / Yetenekler</label>
+              <div class="option-box">
+                <label class="inline-option">
+                  <input type="checkbox" name="yetenek" value="html">
+                  <span>HTML</span>
+                </label>
+                <label class="inline-option">
+                  <input type="checkbox" name="yetenek" value="css">
+                  <span>CSS</span>
+                </label>
+                <label class="inline-option">
+                  <input type="checkbox" name="yetenek" value="algoritma">
+                  <span>Algoritma</span>
+                </label>
+              </div>
+            </div>
 
-        <div class="button-group">
-          <button type="submit" class="send-btn">Gönder</button>
-          <button type="reset" class="clear-btn">Temizle</button>
-        </div>
-      </form>
+            <div class="form-field">
+              <label for="konu">Konu</label>
+              <select id="konu" name="konu">
+                <option value="">Lütfen bir konu seçin...</option>
+                <option value="is-teklifi">İş Teklifi</option>
+                <option value="soru">Soru</option>
+                <option value="geri-bildirim">Geri Bildirim</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="dosya">Özgeçmiş veya Fotoğraf Yükle</label>
+              <input type="file" id="dosya" name="dosya">
+            </div>
+
+            <div class="form-field form-field--full">
+              <label for="mesaj">Mesajınız</label>
+              <textarea id="mesaj" name="mesaj" rows="7" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="send-btn">Gönder</button>
+            <button type="reset" class="clear-btn">Temizle</button>
+          </div>
+        </form>
+      </section>
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2026 Beyza Naz Öztürk</p>
   </footer>
 
+  <script src="scripts/main.js"></script>
 </body>
 </html>

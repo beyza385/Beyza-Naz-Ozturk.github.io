@@ -2,50 +2,311 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Beyza Naz Öztürk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyza Naz Öztürk | Kişisel Web Sitesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-      <li><a href="lab_position.html">Lab Position</a></li>
-    </ul>
+<body id="top">
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="#top" aria-current="page">Ana Sayfa</a>
+        <a href="contact.html">İletişim Formu</a>
+        <a href="projelerim.html">Flex Box</a>
+        <a href="lab_position.html">Position</a>
+        <a href="hafta6-1.html">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <h1>Beyza Naz Öztürk</h1>
-    <p>Bilgisayar mühendisliği öğrencisi olarak yazılım, yapay zeka ve teknoloji alanlarında projeler geliştirmeye odaklanıyorum.</p>
+  <header class="hero-section">
+    <div class="section-shell hero-grid">
+      <section class="surface-card hero-copy">
+        <span class="eyebrow">Marmara Üniversitesi | Bilgisayar Mühendisliği</span>
+        <h1>Beyza Naz Öztürk</h1>
+        <p>
+          Bilgisayar mühendisliği öğrencisi olarak yazılım, yapay zeka ve teknoloji alanlarında proje geliştirmeye odaklanıyorum.
+          Akademik sürecimde öğrendiğim bilgileri gerçek uygulamalarla destekleyen, düzenli ve profesyonel bir portfolyo yapısı oluşturdum.
+        </p>
+        <div class="cta-row">
+          <a href="#laboratuvar" class="primary-btn">Laboratuvar Uygulamalarını İncele</a>
+          <a href="projelerim.html" class="secondary-btn">Projelerim Sayfası</a>
+        </div>
+        <div class="quick-links">
+          <a href="hafta6-1.html" class="week-btn">Hafta 6-1</a>
+          <a href="hafta6-2.html" class="week-btn">Hafta 6-2</a>
+          <a href="hafta7.html" class="week-btn">Hafta 7</a>
+        </div>
+      </section>
 
-    <div class="project-button-area">
-      <a href="projelerim.html" class="project-button">Projelerim Sayfasına Git</a>
+      <aside class="surface-card hero-panel">
+        <p class="panel-label">Öne Çıkanlar</p>
+        <div class="hero-stats">
+          <article class="stat-card">
+            <h2>Eğitim</h2>
+            <p>Algoritmalar, veri yapıları, ağ sistemleri ve yazılım geliştirme alanlarında aktif olarak kendimi geliştiriyorum.</p>
+          </article>
+          <article class="stat-card">
+            <h2>Teknik Odak</h2>
+            <p>Yapay zeka, veri analizi, gömülü sistemler ve kullanıcı arayüzü tasarımı üzerinde çalışıyorum.</p>
+          </article>
+          <article class="stat-card">
+            <h2>Hedef</h2>
+            <p>Teorik bilgiyi gerçek dünya problemlerine çözüm üreten projelerle birleştiren güçlü bir yazılım mühendisi olmak.</p>
+          </article>
+        </div>
+      </aside>
     </div>
-    <div class="week-buttons">
-  <a href="hafta6-1.html" class="week-btn">Hafta 6 - 1</a>
-  <a href="hafta6-2.html" class="week-btn">Hafta 6 - 2</a>
-  <a href="hafta7.html" class="week-btn">Hafta 7 Uygulamasına Git</a>
-</div>
   </header>
 
-  <main class="content">
-    <div class="box">
-      <h2>Eğitim</h2>
-      <p>Marmara Üniversitesi Bilgisayar Mühendisliği bölümünde eğitimime devam ediyorum. Bu süreçte algoritmalar, veri yapıları, ağ sistemleri ve yazılım geliştirme konularında kendimi geliştirme fırsatı buldum.</p>
-      <p>Akademik eğitimim dışında çeşitli teknik projeler geliştirerek teorik bilgimi uygulamaya dökmeye çalışıyorum. Bu çalışmalar sayesinde problem çözme ve analitik düşünme becerilerimi geliştirdim.</p>
-    </div>
+  <main>
+    <section class="section">
+      <div class="section-shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Akademik Yolculuk</span>
+            <h2>Üniversite sürecinde güçlendirdiğim temel alanlar</h2>
+          </div>
+          <p class="section-copy">
+            Derslerde edindiğim bilgi birikimini proje üretimiyle destekliyor; her yeni uygulamada hem teknik hem de analitik becerilerimi geliştirmeye devam ediyorum.
+          </p>
+        </div>
 
-    <div class="box">
-      <h2>Projeler</h2>
-      <p>Üniversite sürecinde yapay zeka, veri analizi ve ağ sistemleri ile ilgili birçok proje geliştirdim. Bu projeler hem yazılım geliştirme becerilerimi hem de teknik araştırma yeteneklerimi geliştirmemi sağladı.</p>
-      <p>Ayrıca gömülü sistemler, mikrodenetleyiciler ve veri aktarım sistemleri üzerine çalışmalar yaparak farklı teknoloji alanlarını deneyimleme fırsatı elde ettim.</p>
-    </div>
+        <div class="card-grid">
+          <article class="surface-card">
+            <h3>Eğitim</h3>
+            <p>
+              Marmara Üniversitesi Bilgisayar Mühendisliği bölümünde eğitimime devam ediyorum. Bu süreçte algoritmalar,
+              veri yapıları, ağ sistemleri ve yazılım geliştirme konularında kendimi geliştirme fırsatı buldum.
+            </p>
+            <p>
+              Akademik eğitimim dışında çeşitli teknik projeler geliştirerek teorik bilgimi uygulamaya dökmeye çalışıyorum.
+              Bu çalışmalar sayesinde problem çözme ve analitik düşünme becerilerimi güçlendirdim.
+            </p>
+          </article>
+
+          <article class="surface-card">
+            <h3>Projeler</h3>
+            <p>
+              Üniversite sürecinde yapay zeka, veri analizi ve ağ sistemleri ile ilgili birçok proje geliştirdim.
+              Bu projeler hem yazılım geliştirme becerilerimi hem de teknik araştırma yeteneklerimi geliştirmemi sağladı.
+            </p>
+            <p>
+              Ayrıca gömülü sistemler, mikrodenetleyiciler ve veri aktarım sistemleri üzerine çalışmalar yaparak farklı teknoloji alanlarını
+              deneyimleme fırsatı elde ettim.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="section">
+      <div class="section-shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Hakkımda</span>
+            <h2>Kendimi ve kariyer hedeflerimi nasıl konumlandırıyorum?</h2>
+          </div>
+          <p class="section-copy">
+            Teknik üretim kadar sürekli öğrenme disiplinine de önem veriyorum. Uzun vadede güçlü temellere sahip, üretken bir mühendislik kariyeri kurmayı hedefliyorum.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="surface-card">
+            <h3>Ben Kimim?</h3>
+            <p>
+              Ben Beyza Naz Öztürk. Marmara Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Teknolojiye ve yazılım geliştirmeye büyük ilgi duyuyorum.
+            </p>
+            <p>
+              Özellikle yapay zeka, veri analizi ve gömülü sistemler alanlarında kendimi geliştirmeye çalışıyorum.
+              Üniversite sürecinde farklı teknolojiler öğrenerek teknik becerilerimi artırmayı hedefliyorum.
+            </p>
+          </article>
+
+          <article class="surface-card">
+            <h3>Hedeflerim</h3>
+            <p>
+              Profesyonel hedefim, güçlü teknik bilgiye sahip bir yazılım mühendisi olmak ve gerçek dünya problemlerine çözüm üreten projelerde yer almaktır.
+            </p>
+            <p>
+              Yeni teknolojileri öğrenmek, projeler geliştirmek ve sürekli kendimi geliştirmek benim için oldukça önemlidir.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ilgi-alanlari" class="section">
+      <div class="section-shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">İlgi Alanlarım</span>
+            <h2>Merak duyduğum ve üzerine çalıştığım teknoloji alanları</h2>
+          </div>
+          <p class="section-copy">
+            Farklı disiplinlerde çalışmak, daha bütüncül çözümler üretebilmemi sağlıyor. Donanım ile yazılımın kesiştiği alanlar özellikle ilgimi çekiyor.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="surface-card">
+            <h3>Teknik Alanlar</h3>
+            <p>
+              Yapay zeka ve makine öğrenmesi teknoloji dünyasında en çok ilgimi çeken alanlardan biridir.
+              Veri ile çalışan sistemlerin nasıl öğrenebildiğini araştırmak benim için oldukça heyecan vericidir.
+            </p>
+            <p>
+              Ayrıca veri analizi ve veri işleme sistemleri üzerine çalışmak, büyük veri setlerinden anlamlı sonuçlar çıkarmak da ilgilendiğim konular arasındadır.
+            </p>
+          </article>
+
+          <article class="surface-card">
+            <h3>Diğer İlgi Alanlarım</h3>
+            <p>
+              Gömülü sistemler ve mikrodenetleyici tabanlı projeler de ilgi duyduğum alanlardan biridir.
+              Donanım ile yazılımın birlikte çalıştığı sistemleri geliştirmek oldukça öğreticidir.
+            </p>
+            <p>
+              Bunun yanında web geliştirme ve kullanıcı arayüzü tasarımı alanlarında da projeler geliştirerek kendimi geliştirmeye devam ediyorum.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim-bilgileri" class="section">
+      <div class="section-shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">İletişim Bilgileri</span>
+            <h2>Projeler, iş birlikleri ve akademik çalışmalar için ulaşım noktaları</h2>
+          </div>
+          <p class="section-copy">
+            İletişim sayfasındaki form ayrı laboratuvar uygulaması olarak taşındı. Temel iletişim bilgileri ise ana sayfa içinde erişilebilir durumda tutuldu.
+          </p>
+        </div>
+
+        <div class="page-grid">
+          <article class="surface-card">
+            <h3>İletişim Notu</h3>
+            <p>Projeler, iş birlikleri veya akademik çalışmalar hakkında benimle iletişime geçebilirsiniz.</p>
+            <p>GitHub üzerinden projelerimi inceleyebilir veya e-posta yoluyla benimle doğrudan ulaşabilirsiniz.</p>
+            <div class="pill-list">
+              <span class="pill">Yapay Zeka</span>
+              <span class="pill">Web Geliştirme</span>
+              <span class="pill">Gömülü Sistemler</span>
+            </div>
+          </article>
+
+          <article class="surface-card">
+            <h3>Bağlantılar</h3>
+            <div class="info-list">
+              <a class="contact-link" href="https://github.com/beyza385" target="_blank" rel="noreferrer">
+                <span>GitHub</span>
+                <strong>github.com/beyza385</strong>
+              </a>
+              <a class="contact-link" href="mailto:beyzanazozturkk@gmail.com">
+                <span>E-posta</span>
+                <strong>beyzanazozturkk@gmail.com</strong>
+              </a>
+            </div>
+            <div class="cta-row" style="margin-top: 18px;">
+              <a href="contact.html" class="primary-btn">İletişim Formunu Aç</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="laboratuvar" class="section">
+      <div class="section-shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Laboratuvarlar</span>
+            <h2>Laboratuvar Uygulamaları</h2>
+          </div>
+          <p class="section-copy">
+            Her hafta uygulaması ayrı sayfada korunur. Aşağıdaki butonlar hafta adıyla görünür, navbar ise uygulama isimleri üzerinden erişim sağlar.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 3</span>
+              <span class="lab-tag">Form</span>
+            </div>
+            <h3>İletişim Formu</h3>
+            <p>Eski iletişim sayfasındaki form ayrı sayfaya taşındı. Ana sayfadaki iletişim bilgileriyle birlikte daha net bir yapı sunuyor.</p>
+            <a href="contact.html" class="lab-button">Hafta 3</a>
+          </article>
+
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 4</span>
+              <span class="lab-tag">Flex</span>
+            </div>
+            <h3>Flex Box</h3>
+            <p>“Projelerim” sayfası korunarak geliştirildi. Kart alanlarına yeni “Detay Gör” butonları eklenerek etkileşim artırıldı.</p>
+            <a href="projelerim.html" class="lab-button">Hafta 4</a>
+          </article>
+
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 5</span>
+              <span class="lab-tag">Layout</span>
+            </div>
+            <h3>Position</h3>
+            <p>Lab Position sayfasının mevcut yapısı korundu ve genel site arayüzü bu görsel dile uyacak şekilde yenilendi.</p>
+            <a href="lab_position.html" class="lab-button">Hafta 5</a>
+          </article>
+
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 6-1</span>
+              <span class="lab-tag">JavaScript</span>
+            </div>
+            <h3>Not Hesaplama</h3>
+            <p>Var olan hesaplama mantığı korunarak sayfa arayüzü ortak tema ve tutarlı navbar sistemiyle güncellendi.</p>
+            <a href="hafta6-1.html" class="lab-button">Hafta 6-1</a>
+          </article>
+
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 6-2</span>
+              <span class="lab-tag">JavaScript</span>
+            </div>
+            <h3>Birim Dönüştürücü</h3>
+            <p>Dönüştürme sayfası mevcut işlevini koruyor; yeni görünüm, responsive boşluklar ve profesyonel kart yapısıyla devam ediyor.</p>
+            <a href="hafta6-2.html" class="lab-button">Hafta 6-2</a>
+          </article>
+
+          <article class="surface-card lab-card">
+            <div class="lab-card-top">
+              <span class="week-label">Hafta 7</span>
+              <span class="lab-tag">Bootstrap</span>
+            </div>
+            <h3>Bootstrap</h3>
+            <p>Bootstrap bileşenleriyle hazırlanan sayfa, ortak navbar ve yeni tipografiyle tüm siteyle görsel bütünlük içinde çalışır.</p>
+            <a href="hafta7.html" class="lab-button">Hafta 7</a>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2026 Beyza Naz Öztürk</p>
   </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

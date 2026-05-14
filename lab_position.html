@@ -2,24 +2,36 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Lab Position</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 5 | Position</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="lab-page">
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-      <li><a href="lab_position.html">Lab Position</a></li>
-    </ul>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="index.html#top">Ana Sayfa</a>
+        <a href="contact.html">İletişim Formu</a>
+        <a href="projelerim.html">Flex Box</a>
+        <a href="lab_position.html" aria-current="page">Position</a>
+        <a href="hafta6-1.html">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
   </nav>
 
   <header class="lab-header">
-    <h1>Kampüs Duyurusu</h1>
-    <p>CSS Position kullanılarak hazırlanmış etkileşimli etkinlik kartı</p>
+    <section class="page-banner">
+      <span class="eyebrow">Hafta 5</span>
+      <h1>Position Uygulaması</h1>
+      <p>CSS position kullanılarak hazırlanmış etkileşimli etkinlik kartı. Sayfanın mevcut görsel dili korunurken genel site tasarımı bu yapıya uyumlu hale getirildi.</p>
+    </section>
   </header>
 
   <main class="lab-container">
@@ -32,7 +44,8 @@
         <h2>Summer Talks Night</h2>
 
         <p class="event-intro">
-          Gün batımının pastel tonlarından ilham alan bu özel akşam, ilham veren konuşmalar ve keyifli anlarla dolu, sade ama zarif bir deneyim sunar.
+          Gün batımının pastel tonlarından ilham alan bu özel akşam, ilham veren konuşmalar ve keyifli anlarla dolu,
+          sade ama zarif bir deneyim sunar.
         </p>
 
         <div class="event-info-box">
@@ -63,23 +76,20 @@
             <div class="event-detail-card">
               <h3>ETKİNLİK DETAYI</h3>
               <p>
-                Açılış konuşmasıyla başlayacak etkinlik, kısa ilham oturumları ve keyifli bir networking bölümüyle devam eder. Minimal tasarım ve soft renk geçişleriyle sakin ama etkileyici bir atmosfer sunar.
+                Açılış konuşmasıyla başlayacak etkinlik, kısa ilham oturumları ve keyifli bir networking bölümüyle devam eder.
+                Minimal tasarım ve yumuşak renk geçişleriyle sakin ama etkileyici bir atmosfer sunar.
               </p>
             </div>
 
             <div class="event-mini-grid">
               <div class="event-mini-card">
                 <h3>İÇERİK</h3>
-                <p>
-                  Konuşmalar, mini deneyim alanı ve sosyal etkileşim bölümüyle dengeli bir akşam programı sunulur.
-                </p>
+                <p>Konuşmalar, mini deneyim alanı ve sosyal etkileşim bölümüyle dengeli bir akşam programı sunulur.</p>
               </div>
 
               <div class="event-mini-card">
                 <h3>ATMOSFER</h3>
-                <p>
-                  Açık hava hissi veren ferah bir ortam, canlı konuşmalar, hafif müzik ve gün batımına eşlik eden sıcak bir etkinlik akışı.
-                </p>
+                <p>Açık hava hissi veren ferah bir ortam, hafif müzik ve sıcak bir etkinlik akışı ile desteklenir.</p>
               </div>
             </div>
           </div>
@@ -88,9 +98,10 @@
     </section>
   </main>
 
-  <footer class="lab-footer">
+  <footer class="site-footer">
     <p>© 2026 Beyza Naz Öztürk</p>
   </footer>
 
+  <script src="scripts/main.js"></script>
 </body>
 </html>

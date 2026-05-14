@@ -2,40 +2,42 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Hakkımda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=index.html#hakkimda">
+  <title>Hakkımda | Yönlendiriliyor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="about.html">Hakkımda</a></li>
-      <li><a href="interests.html">İlgi Alanlarım</a></li>
-      <li><a href="contact.html">İletişim</a></li>
-    </ul>
+<body class="redirect-page">
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="index.html#top" aria-current="page">Ana Sayfa</a>
+        <a href="contact.html">İletişim Formu</a>
+        <a href="projelerim.html">Flex Box</a>
+        <a href="lab_position.html">Position</a>
+        <a href="hafta6-1.html">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <h1>Hakkımda</h1>
-    <p>Kendimi ve kariyer hedeflerimi anlattığım sayfa.</p>
-  </header>
-
-  <main class="content">
-    <div class="box">
-      <h2>Ben Kimim?</h2>
-      <p>Ben Beyza Naz Öztürk. Marmara Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Teknolojiye ve yazılım geliştirmeye büyük ilgi duyuyorum.</p>
-      <p>Özellikle yapay zeka, veri analizi ve gömülü sistemler alanlarında kendimi geliştirmeye çalışıyorum. Üniversite sürecinde farklı teknolojiler öğrenerek teknik becerilerimi artırmayı hedefliyorum.</p>
-    </div><div class="box">
-      <h2>Hedeflerim</h2>
-      <p>Profesyonel hedefim, güçlü teknik bilgiye sahip bir yazılım mühendisi olmak ve gerçek dünya problemlerine çözüm üreten projelerde yer almaktır.</p>
-      <p>Yeni teknolojileri öğrenmek, projeler geliştirmek ve sürekli kendimi geliştirmek benim için oldukça önemlidir.</p>
+  <main class="redirect-main">
+    <div class="section-shell">
+      <section class="redirect-card">
+        <span class="eyebrow">Güncel Yapı</span>
+        <h1>Hakkımda bölümü ana sayfaya taşındı.</h1>
+        <p>Otomatik yönlendirme çalışmazsa aşağıdaki buton ile doğrudan ilgili bölüme geçebilirsiniz.</p>
+        <a href="index.html#hakkimda" class="primary-btn">Hakkımda Bölümüne Git</a>
+      </section>
     </div>
   </main>
 
-  <footer>
-    <p>© 2026 Beyza Naz Öztürk</p>
-  </footer>
-
+  <script src="scripts/main.js"></script>
 </body>
 </html>

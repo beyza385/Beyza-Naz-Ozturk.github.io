@@ -6,7 +6,7 @@ function donustur() {
   result.style.display = "block";
 
   if (isNaN(value)) {
-    result.innerHTML = `<p class="result-error">Lütfen geçerli bir sayı giriniz.</p>`;
+    result.innerHTML = '<p class="result-error">Lütfen geçerli bir sayı giriniz.</p>';
     return;
   }
 

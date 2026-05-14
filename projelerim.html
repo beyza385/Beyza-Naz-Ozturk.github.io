@@ -2,86 +2,152 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Projelerim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafta 4 | Flex Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="projects-page">
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html#top">Beyza Naz Öztürk</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç">Menü</button>
+      <div class="nav-links">
+        <a href="index.html#top">Ana Sayfa</a>
+        <a href="contact.html">İletişim Formu</a>
+        <a href="projelerim.html" aria-current="page">Flex Box</a>
+        <a href="lab_position.html">Position</a>
+        <a href="hafta6-1.html">Not Hesaplama</a>
+        <a href="hafta6-2.html">Birim Dönüştürücü</a>
+        <a href="hafta7.html">Bootstrap</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="projects-wrapper">
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
-
-    <section class="projects-header">
-      <h1>Projelerim</h1>
-      <p>Üniversite sürecinde geliştirdiğim ve üzerinde çalıştığım bazı projeler aşağıda yer almaktadır.</p>
-    </section>
+    <header class="projects-header">
+      <section class="page-banner">
+        <span class="eyebrow">Hafta 4</span>
+        <h1>Flex Box Uygulaması</h1>
+        <p>Projelerimi, çalışma odaklarımı ve üretim sürecimi esnek kart yapılarıyla sunan sayfa; modern boşluklar ve tutarlı butonlarla güncellendi.</p>
+      </section>
+    </header>
 
     <section class="projects-hero">
-      <div class="hero-left">
+      <article class="hero-left">
         <h2>Teknik Çalışma Alanlarım</h2>
         <p>Yapay zeka, gömülü sistemler, ağ teknolojileri, web geliştirme ve düşük seviyeli programlama alanlarında projeler geliştiriyorum.</p>
-        <a href="#" class="hero-link-button">Detay Gör</a>
-      </div>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Farklı teknoloji alanlarında çalışmak, problem çözme yaklaşımımı çeşitlendiriyor ve projelerde daha esnek kararlar almamı sağlıyor.</p>
+        </details>
+      </article>
 
-      <div class="hero-right">
+      <article class="hero-right">
         <h2>Odak Noktalarım</h2>
-        <p>Yapay Zeka</p>
-        <p>Web Geliştirme</p>
-        <p>Gömülü Sistemler</p>
-        <p>Ağ Yapıları</p>
-      </div>
+        <p>Yapay zeka</p>
+        <p>Web geliştirme</p>
+        <p>Gömülü sistemler</p>
+        <p>Ağ yapıları</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Projelerimde kullanıcı arayüzü ile teknik altyapı arasındaki dengeyi korumaya, hem işlevsel hem de anlaşılır çıktılar üretmeye odaklanıyorum.</p>
+        </details>
+      </article>
     </section>
 
     <section class="projects-cards">
-      <div class="project-card">
+      <article class="project-card">
         <h2>Sprint Tracker Uygulaması</h2>
-        <p>React, Node.js, Express ve SQL Server kullanarak geliştirdiğim bu uygulamada proje, görev ve ekip yönetimi üzerine çalıştım. Arayüz ve backend geliştirmeyi birlikte deneyimlediğim bir full-stack proje oldu.</p>
-        <a href="#" class="hero-link-button">Detay Gör</a>
-      </div>
+        <p>React, Node.js, Express ve SQL Server kullanarak geliştirdiğim bu uygulamada proje, görev ve ekip yönetimi üzerine çalıştım.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Bu proje, arayüz ve backend geliştirmeyi aynı akış içinde deneyimlediğim bir full-stack çalışma oldu. Özellikle görev durumları ve ekip koordinasyonu üzerine yoğunlaştım.</p>
+        </details>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h2>Ses Tabanlı Steganaliz Projesi</h2>
-        <p>Ses verileri üzerinde gizli veri taşıyan örnekleri sınıflandırmaya yönelik derin öğrenme tabanlı modeller geliştirdim. Özellikle farklı stego türlerini ayırt etmeye odaklandım.</p>
-        <a href="#" class="hero-link-button">Detay Gör</a>
-      </div>
+        <p>Ses verileri üzerinde gizli veri taşıyan örnekleri sınıflandırmaya yönelik derin öğrenme tabanlı modeller geliştirdim.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Özellikle farklı stego türlerini ayırt etmeye odaklandım. Bu çalışma, veri hazırlama ve model yorumlama becerilerimi geliştirmeme katkı sağladı.</p>
+        </details>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h2>Teknofest Drone Karar Destek Projesi</h2>
-        <p>Bu projede drone sistemine görüntü işleme yanında karar destek yapısı eklemeyi hedefledim. Amaç, farklı bölgeler için veri toplayıp en uygun rota ve görev önceliğini belirleyen daha akıllı bir yapı kurmaktı.</p>
-      </div>
+        <p>Drone sistemine görüntü işleme yanında karar destek yapısı eklemeyi hedefledim.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Amaç, farklı bölgeler için veri toplayıp en uygun rota ve görev önceliğini belirleyen daha akıllı bir yapı kurmaktı. Veri odaklı karar katmanı üzerine yoğunlaştım.</p>
+        </details>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h2>Hastane Ağı Tasarım Projesi</h2>
-        <p>Bu çalışmada hastane ortamına uygun ağ topolojisi planladım. Departmanlar arası iletişim, ağ cihazlarının yerleşimi ve bağlantı yapıları üzerinde çalışarak kurumsal ağ mantığını uygulamalı olarak öğrendim.</p>
-      </div>
+        <p>Hastane ortamına uygun ağ topolojisi planlayarak departmanlar arası iletişim ve cihaz yerleşimi üzerinde çalıştım.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Kurumsal ağ mantığını uygulamalı olarak öğrenmemi sağlayan bu projede güvenilir bağlantı, ölçeklenebilirlik ve düzenli altyapı planlaması öne çıktı.</p>
+        </details>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h2>EMU8086 Kedi Temalı Oyun</h2>
-        <p>Assembly dili ile geliştirdiğim bu oyunda karakter hareketi, engel sistemi, can mantığı ve tema geçişleri gibi özellikler üzerinde çalıştım. Bu proje düşük seviyeli programlama becerimi geliştirdi.</p>
-      </div>
+        <p>Assembly dili ile geliştirdiğim bu oyunda karakter hareketi, engel sistemi, can mantığı ve tema geçişleri üzerinde çalıştım.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Düşük seviyeli programlama mantığını daha iyi kavramamı sağlayan bu projede kullanıcı girdisi, oyun akışı ve basit grafik mantığı üzerine deneyim kazandım.</p>
+        </details>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h2>Kişisel Bütçe Planlama Uygulaması</h2>
-        <p>Kullanıcıların gelir, gider ve harcama takibini yapabileceği bir bütçe planlama sistemi fikri geliştirdim. Amaç, kullanıcıya sadece kayıt tutmak değil, aynı zamanda daha mantıklı bütçe önerileri sunabilmekti.</p>
-      </div>
+        <p>Kullanıcıların gelir, gider ve harcama takibini yapabileceği bir bütçe planlama sistemi fikri geliştirdim.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Amaç yalnızca kayıt tutmak değil, aynı zamanda daha mantıklı bütçe önerileri sunabilen bir yapı oluşturmaktı. Kullanıcı alışkanlıklarına göre öneri mantığı tasarlandı.</p>
+        </details>
+      </article>
     </section>
 
     <section class="projects-grow">
-      <div class="grow-box grow-one">Araştırma</div>
-      <div class="grow-box grow-two">Geliştirme</div>
-      <div class="grow-box grow-three">Uygulama</div>
+      <article class="grow-box grow-one">
+        <h3>Araştırma</h3>
+        <p>Problemi tanımlama, kaynak tarama ve teknik yaklaşımı belirleme aşaması.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Projelerime başlamadan önce konu alanını anlamak, benzer çözümleri incelemek ve doğru teknoloji seçimini yapmak için araştırma sürecine zaman ayırıyorum.</p>
+        </details>
+      </article>
+
+      <article class="grow-box grow-two">
+        <h3>Geliştirme</h3>
+        <p>Tasarım, kodlama ve test aşamalarını dengeli biçimde ilerlettiğim üretim süreci.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Bu aşamada arayüz düzeni, veri akışı ve kullanıcı deneyimi birlikte ele alınıyor. Özellikle okunabilir ve sürdürülebilir kod yapısı oluşturmaya dikkat ediyorum.</p>
+        </details>
+      </article>
+
+      <article class="grow-box grow-three">
+        <h3>Uygulama</h3>
+        <p>Ortaya çıkan çözümü değerlendirme, geri bildirim alma ve iyileştirme safhası.</p>
+        <details class="project-detail">
+          <summary class="detail-trigger">Detay Gör</summary>
+          <p class="project-detail-copy">Geliştirilen çözümün gerçek kullanım senaryolarında nasıl davrandığını görmek, sonraki projelerde daha doğru kararlar almama yardımcı oluyor.</p>
+        </details>
+      </article>
     </section>
-
-    <footer class="projects-footer">
-      <p>© 2026 Beyza Naz Öztürk</p>
-    </footer>
-
   </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Beyza Naz Öztürk</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
